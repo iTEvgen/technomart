@@ -14,7 +14,7 @@
           <a class="hadihg-nav__logo">Техномарт</a>
           <form class="hadihg-nav__form" action="https://echo.htmlacademy.ru" method="POST">
             <label class="visually-hidden" for="search-site-id">поис по сайту</label>
-            <input type="search" mane="search-form" id="search-site-id">
+            <input type="search" name="search-form" id="search-site-id">
           </form>
           <a class="hadihg-nav__item" href="#" aria-label="Переход на страницу с закладками">Закладки: <span>0</span></a>
           <a class="hadihg-nav__item" href="#" aria-label="Переход на страницу с корзиной">Корзина: <span>0</span></a>
@@ -28,7 +28,7 @@
             <p class="content__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <ul class="user-nav__list">
-            <li class="user-nav__item" aria-label="Переход на страницу с авторизации"><a href="#">Войти</a></li>
+            <li class="user-nav__item" ><a href="#" aria-label="Переход на страницу с авторизации">Войти</a></li>
             <li class="user-nav__item"><a href="#" aria-label="Переход на страницу с регистрации">Регистрация</a></li>
           </ul>
         </div>
@@ -372,7 +372,7 @@
       <form action="https://echo.htmlacademy.ru" method="POST">
         <p>
           <label for="name-id">Ваше имя:</label>
-          <input type="text" name="" id="name-id" placeholder="Имя Фамилия">
+          <input type="text" name="first-name" id="name-id" placeholder="Имя Фамилия">
         </p>
         <p>
           <label for="email-id">Ваш e-mail:</label>
@@ -390,10 +390,10 @@
     <section class="modal-maps">
       <h2 class="visually-hidden">Расположение на карте интернет-магазиа Техномарт</h2>
       <picture>
-        <source type="image/webp" srcset="img/full-maps@1x.webp" width="940" height="446">
+        <source type="image/webp" srcset="img/full-maps@1x.webp">
         <img src="img/full-maps@1x.jpg" alt="Большая Конюшенная ул., 19" width="940" height="446">
-        <button type="button"><span class="visually-hidden">Закрыть</span></button>
       </picture>
+      <button type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
   </body>
 </html>
