@@ -12,12 +12,13 @@
 
         <div class="page-header__hadihg-nav">
           <a class="hadihg-nav__logo">Техномарт</a>
-          <form class="hadihg-nav__form" action="https://echo.htmlacademy.ru" method="GET">
-            <input type="search">
+          <form class="hadihg-nav__form" action="https://echo.htmlacademy.ru" method="POST">
+            <label class="visually-hidden" for="search-site-id">поис по сайту</label>
+            <input type="search" mane="search-form" id="search-site-id">
           </form>
-          <a class="hadihg-nav__item" href="#">Закладки: <span>0</span></a>
-          <a class="hadihg-nav__item" href="#">Корзина: <span>0</span></a>
-          <a class="hadihg-nav__item" href="#">Оформить заказ</a>
+          <a class="hadihg-nav__item" href="#" aria-label="Переход на страницу с закладками">Закладки: <span>0</span></a>
+          <a class="hadihg-nav__item" href="#" aria-label="Переход на страницу с корзиной">Корзина: <span>0</span></a>
+          <a class="hadihg-nav__item" href="#" aria-label="Переход на страницу с Оформить заказ">Оформить заказ</a>
         </div>
 
         <div class="page-header__user-nav">
@@ -27,8 +28,8 @@
             <p class="content__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <ul class="user-nav__list">
-            <li class="user-nav__item"><a href="#">Войти</a></li>
-            <li class="user-nav__item"><a href="#">Регистрация</a></li>
+            <li class="user-nav__item" aria-label="Переход на страницу с авторизации"><a href="#">Войти</a></li>
+            <li class="user-nav__item"><a href="#" aria-label="Переход на страницу с регистрации">Регистрация</a></li>
           </ul>
         </div>
 
@@ -70,11 +71,11 @@
         <div class="promo__block">
           <div class="promo__list">
             <h3 class="promo__heading">Материалы</h3>
-            <a class="promo__item" href="#">на любой вкус</a>
+            <a class="promo__item" href="#" aria-label="Переход на страницу с материалами на любой вкус">на любой вкус</a>
           </div>
           <div class="promo__list">
             <h3 class="promo__heading">Инструмент</h3>
-            <a class="promo__item" href="#">на все случаи</a>
+            <a class="promo__item" href="#" aria-label="Переход на страницу с инструментами на все случаи">на все случаи</a>
           </div>
           <div class="promo__slider">
             <!--место для слайдера-->
@@ -84,15 +85,15 @@
         <div class="promo__block">
           <div class="promo__list">
             <h3 class="promo__heading">Техника</h3>
-            <a class="promo__item" href="#">для стройки</a>
+            <a class="promo__item" href="#" aria-label="Переход на страницу с техникой для стройки">для стройки</a>
           </div>
           <div class="promo__list">
             <h3 class="promo__heading">Скидки 50%</h3>
-            <a class="promo__item" href="#">на 350 товаров</a>
+            <a class="promo__item" href="#" aria-label="Переход на страницу со кидками 50% на 350 товаров">на 350 товаров</a>
           </div>
           <div class="promo__list">
             <h3 class="promo__heading">Доставка</h3>
-            <a class="promo__item" href="#">Бесплатно</a>
+            <a class="promo__item" href="#" aria-label="Переход на страницу с бесплатной доставкой">Бесплатно</a>
           </div>
         </div>
 
@@ -103,37 +104,49 @@
 
           <div class="popular-products__wrapper">
             <h2 class="popular-products__heading">Популярные товары:</h2>
-            <a class="popular-products__all-product" href="#">все популярные товары</a>
+            <a class="popular-products__all-product" href="#" aria-label="Переход на страницу с популярными товарами">все популярные товары</a>
           </div>
 
           <ul class="popular-products__list">
             <li class="popular-products__items">
-              <a class="popular-products__item" href="#">
-                <img class="popular-products__img" src="img/product-one.jpg" alt="Перфоратор BOSCH BFG 9000" width="180" height="160">
+              <a class="popular-products__item" href="#" aria-label="Переход на карточки товара">
+                <picture>
+                  <source type="image/webp" srcset="img/product_one@1x.webp">
+                  <img class="popular-products__img" src="img/product_one@1x.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="150">
+                </picture>
                 <h3 class="popular-products__heading">Перфоратор <span>Bosch bfg 9000</span></h3>
                 <span>32500 Р.</span>
                 <p class="popular-products__price">25500 Р.</p>
               </a>
             </li>
             <li class="popular-products__items">
-              <a class="popular-products__item" href="#">
-                <img class="popular-products__img" src="img/product-one.jpg" alt="Перфоратор BOSCH BFG 3000" width="180" height="160">
+              <a class="popular-products__item" href="#" aria-label="Переход на карточки товара">
+                <picture>
+                  <source type="image/webp" srcset="img/product_four@1x.webp">
+                  <img class="popular-products__img" src="img/product_four@1x.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="150">
+                </picture>
                 <h3 class="popular-products__heading">Перфоратор <span>Bosch bfg 3000</span></h3>
                 <span>22500 Р.</span>
                 <p class="popular-products__price">15500 Р.</p>
               </a>
             </li>
             <li class="popular-products__items">
-              <a class="popular-products__item" href="#">
-                <img class="popular-products__img" src="img/product-one.jpg" alt="Перфоратор BOSCH BFG 6000" width="180" height="160">
+              <a class="popular-products__item" href="#" aria-label="Переход на карточки товара">
+                <picture>
+                  <source type="image/webp" srcset="img/product_three@1x.webp">
+                  <img class="popular-products__img" src="img/product_three@1x.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="150">
+                </picture>
                 <h3 class="popular-products__heading">Перфоратор <span>Bosch bfg 6000</span></h3>
                 <span>30500 Р.</span>
                 <p class="popular-products__price">25500 Р.</p>
               </a>
             </li>
             <li class="popular-products__items">
-              <a class="popular-products__item" href="#">
-                <img class="popular-products__img" src="img/product-one.jpg" alt="Перфоратор BOSCH BFG 2000" width="180" height="160">
+              <a class="popular-products__item" href="#" aria-label="Переход на карточки товара">
+                <picture>
+                  <source type="image/webp" srcset="img/product_four@1x.webp">
+                  <img class="popular-products__img" src="img/product_four@1x.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="150">
+                </picture>
                 <h3 class="popular-products__heading">Перфоратор <span>Bosch bfg 2000</span></h3>
                 <span></span>
                 <p class="popular-products__price">12500 Р.</p>
@@ -148,48 +161,72 @@
 
         <div class="manufacture__wrapper">
           <h2 class="manufacture__heading">Популярные производители:</h2>
-          <a class="manufacture__all" href="#">все производители</a>
+          <a class="manufacture__all" href="#" aria-label="Переход на страницу все производителями">все производители</a>
         </div>
 
         <ul class="manufacture__list">
           <li class="manufacture__items">
-            <a href="" class="manufacture__item">
-              <img src="" alt="">
+            <a href="#" class="manufacture__item" aria-label="Переход на страницу с товарами марки bosch">
+              <picture>
+                <source type="image/webp" srcset="img/bosch@1x.webp">
+                <img src="img/bosch@1x.jpg" alt="логотип марки bosch" width="126" height="37">
+              </picture>
             </a>
           </li>
           <li class="manufacture__items">
-            <a href="" class="manufacture__item">
-              <img src="" alt="">
+            <a href="#" class="manufacture__item" aria-label="Переход на страницу с товарами марки makita">
+              <picture>
+                <source type="image/webp" srcset="img/Makita@1x.webp">
+                <img src="img/Makita@1x.jpg" alt="тлоготип марки makita" width="123" height="40">
+              </picture>
             </a>
           </li>
           <li class="manufacture__items">
-            <a href="" class="manufacture__item">
-              <img src="" alt="">
+            <a href="#" class="manufacture__item" aria-label="Переход на страницу с товарами марки DeWALT">
+              <picture>
+                <source type="image/webp" srcset="img/dewalt@1x.webp">
+                <img src="img/DeWALT@1x.jpg" alt="логотип марки DeWALT" width="146" height="44">
+              </picture>
             </a>
           </li>
           <li class="manufacture__items">
-            <a href="" class="manufacture__item">
-              <img src="" alt="">
+            <a href="#" class="manufacture__item" aria-label="Переход на страницу с товарами марки Interskol">
+              <picture>
+                <source type="image/webp" srcset="img/Interskol@1x.webp">
+                <img src="img/Interskol@1x.jpg" alt="логотип марки Interskol" width="200" height="56">
+              </picture>
             </a>
             </li>
           <li class="manufacture__items">
-            <a href="" class="manufacture__item">
-              <img src="" alt="">
+            <a href="#" class="manufacture__item" aria-label="Переход на страницу с товарами марки Hitachi">
+              <picture>
+                <source type="image/webp" srcset="img/Hitachi@1x.webp">
+                <img src="img/Hitachi@1x.jpg" alt="логотип марки Hitachi" width="169" height="31">
+              </picture>
             </a>
           </li>
           <li class="manufacture__items">
-            <a href="" class="manufacture__item">
-              <img src="" alt="">
+            <a href="#" class="manufacture__item" aria-label="Переход на страницу с товарами марки LG">
+              <picture>
+                <source type="image/webp" srcset="img/LG@1x.webp">
+                <img src="img/LG@1x.jpg" alt="логотип марки LG" width="121" height="73">
+              </picture>
             </a>
           </li>
           <li class="manufacture__items">
-            <a href="" class="manufacture__item">
-              <img src="" alt="">
+            <a href="#" class="manufacture__item" aria-label="Переход на страницу с товарами марки AEG power solutions">
+              <picture>
+
+                <img src="img/AEG@1x.jpg" alt="логотип марки AEG power solutions" width="151" height="96">
+              </picture>
             </a>
           </li>
           <li class="manufacture__items">
-            <a href="" class="manufacture__item">
-              <img src="" alt="">
+            <a href="#" class="manufacture__item" aria-label="Переход на страницу с товарами марки Metabo">
+              <picture>
+                <source type="image/webp" srcset="img/Metabo@1x.webp">
+                <img src="img/Metabo@1x.jpg" alt="логотип марки Metabo" width="204" height="69">
+              </picture>
             </a>
           </li>
         </ul>
@@ -223,16 +260,21 @@
             <li class="description__items">Автотрейдинг</li>
             <li class="description__items">ЖелДорЭкспедиция</li>
           </ul>
-          <a href="#">подробнее о компании</a>
+          <a href="#" aria-label="Переход на странице с одробным описанием компании Техномарт">подробнее о компании</a>
         </section>
 
         <section class="contacts">
           <h2 class="contacts__heading">Контакты</h2>
           <p class="contacts__desc">Вы можете забрать товар сами, заехав в наш офис:</p>
           <figure>
-            <img src="img/maps.jpg" alt="Большая Конюшенная ул., 19" width="300" height="158">
+            <a href="#" aria-label="Вызывает полноразмерное окно карты с адресом интернет-магазина Техномарт">
+              <picture>
+                <source type="image/webp" srcset="img/maps@1x.webp">
+                <img class="contacts__maps" src="img/maps@1x.jpg" alt="Большая Конюшенная ул., 19" width="300" height="158">
+              </picture>
+            </a>
           </figure>
-          <a href="#">заблудились? напишите нам!</a>
+          <a href="#" aria-label="Вызывает форму Связатся с Техномартом">заблудились? напишите нам!</a>
         </section>
 
       </div>
@@ -255,7 +297,7 @@
                 <a href="" class="footer-nav__item">Новости</a>
               </li>
               <li class="footer-nav__items">
-                <a href="" class="footer-nav__item">Каталог</a>
+                <a href="catalog.html" class="footer-nav__item">Каталог</a>
               </li>
               <li class="footer-nav__items">
                 <a href="" class="footer-nav__item">Доставка</a>
@@ -270,16 +312,16 @@
             <p class="footer__contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7 (812) 555-05-55</p>
             <ul class="footer-poducts__list">
               <li class="footer-poducts__items">
-                <a href="#" class="footer-poducts__items">Материалы</a>
+                <a href="#" class="footer-poducts__items" aria-label="Переход на страницу с материалами">Материалы</a>
               </li>
               <li class="footer-poducts__items">
-                <a href="#" class="footer-poducts__items">Техника</a>
+                <a href="#" class="footer-poducts__items" aria-label="Переход на страницу с техникой">Техника</a>
               </li>
               <li class="footer-poducts__items">
-                <a href="#" class="footer-poducts__items">Инструмент</a>
+                <a href="#" class="footer-poducts__items" aria-label="Переход на страницу с инструментами">Инструмент</a>
               </li>
               <li class="footer-poducts__items">
-                <a href="#" class="footer-poducts__items">Спецпредложения</a>
+                <a href="#" class="footer-poducts__items" aria-label="Переход на страницу с спецпредложениями">Спецпредложения</a>
               </li>
             </ul>
           </div>
@@ -294,29 +336,64 @@
 
           <ul class="footer-social__list">
             <li class="footer-social__items">
-              <a href="" class="footer-social__item"><span class="visually-hidden">Вконтакте</span></a>
+              <a href="" class="footer-social__item" aria-label="Переход на страницу соцеальной сети вконтакте">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
             </li>
             <li class="footer-social__items">
-              <a href="" class="footer-social__item"><span class="visually-hidden">Фейсбук</span></a>
+              <a href="" class="footer-social__item" aria-label="Переход на страницу соцеальной сети фейсбук">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
             </li>
             <li class="footer-social__items">
-              <a href="" class="footer-social__item"><span class="visually-hidden">Инстограмм</span></a>
+              <a href="" class="footer-social__item" aria-label="Переход на страницу соцеальной сети инстограмм">
+                <span class="visually-hidden">Инстограмм</span>
+              </a>
             </li>
           </ul>
 
           <div class="footer__mail">
             <p>Обратная связь:</p>
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a href="mailto:mail@htmlacademy.ru" aria-label="Написать писмо htmlacademy">mail@htmlacademy.ru</a>
           </div>
 
           <div class="footer__dev">
             <p>Разработано &ndash;</p>
-            <a href=https://htmlacademy.ru target="_blank">htmlacademy.ru</a>
+            <a href=https://htmlacademy.ru target="_blank" aria-label="Переход на страницу htmlacademy">htmlacademy.ru</a>
           </div>
 
         </div>
       </div>
 
     </footer>
+
+    <section class="modal-form">
+      <h2 class="visually-hidden">Связатся с Техномартом</h2>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label for="name-id">Ваше имя:</label>
+          <input type="text" name="" id="name-id" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="email-id">Ваш e-mail:</label>
+          <input type="email" name="e-mail" id="email-id" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="texi-letters">Текст письма:</label>
+          <textarea id="texi-letters" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button modal-form__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <button class="button modal-form__button" type="submit">Отправить</button>
+      </form>
+    </section>
+
+    <section class="modal-maps">
+      <h2 class="visually-hidden">Расположение на карте интернет-магазиа Техномарт</h2>
+      <picture>
+        <source type="image/webp" srcset="img/full-maps@1x.webp" width="940" height="446">
+        <img src="img/full-maps@1x.jpg" alt="Большая Конюшенная ул., 19" width="940" height="446">
+        <button type="button"><span class="visually-hidden">Закрыть</span></button>
+      </picture>
+    </section>
   </body>
 </html>
