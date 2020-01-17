@@ -1,0 +1,65 @@
+.page-footer__bgr {
+  background-color: #32425C;
+
+  &--color {
+    background-color: #293449;
+  }
+}
+
+.footer-nav > a {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #EE3643;
+}
+
+.footer-nav__list {
+  @include list-reset;
+}
+
+.footer-nav__item {
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer__contacts {
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer-poducts__list {
+  @include list-reset;
+}
+
+.footer-poducts__items {
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFD180;
+  text-decoration: none;
+}
+
+.footer__copyright,
+.footer__mail p,
+.footer__dev {
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.footer-social__list {
+  @include list-reset;
+}
+
+.footer__mail a,
+.footer__dev a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFD180;
+  text-decoration: none;
+}

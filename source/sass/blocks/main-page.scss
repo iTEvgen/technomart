@@ -1,0 +1,125 @@
+.popular-products__wrapper,
+.manufacture__wrapper {
+  text-transform: uppercase;
+  background-color: #F9F5F0;
+}
+
+.popular-products__heading,
+.manufacture__heading {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
+
+  color: #32425C;
+}
+
+.popular-products__all-product,
+.manufacture__all {
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #EE3643;
+}
+
+.popular-products__list {
+  @include list-reset;
+}
+
+.popular-products__items {
+  text-align: center;
+}
+
+.popular-products__item {
+  font-family: "PT Sans", Arial, sans-serif;
+  text-decoration: none;
+}
+
+.popular-products-item__heading {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #000000;
+}
+
+.popular-products__heading > span {
+  text-transform: uppercase;
+}
+
+.popular-products__item > span {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #A9A9A9;
+  text-decoration: line-through;
+}
+
+.popular-products__item > p {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #EE3643;
+}
+
+.manufacture__list {
+  @include list-reset;
+}
+
+.services {
+  background-color: #F4F8FA;
+}
+
+.services__heading,
+.description__heading,
+.contacts__heading {
+  font-size: 30px;
+  left: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.services__desc,
+.description_desc,
+.description_slogon,
+.contacts__desc {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.services__list {
+  @include list-reset;
+}
+
+.services__items {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #32425C;
+  background-color: #FFFFFF;
+
+  &--color {
+    color: #FFFFFF;
+    background-color: #32425C;
+  }
+}
+
+.description__list {
+  @include list-reset;
+}
+
+.description__items {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+
+.description a,
+.contacts > a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #EE3643;
+}

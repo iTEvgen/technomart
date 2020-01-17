@@ -1,0 +1,12 @@
+.site-nav__list {
+  background-color: #32425C;
+
+  @include list-reset;
+}
+
+.site-nav__item {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+  text-decoration: none;
+}

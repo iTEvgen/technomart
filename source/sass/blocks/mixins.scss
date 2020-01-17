@@ -1,0 +1,18 @@
+@mixin list-reset() {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin figure-reset() {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin margin-reset() {
+  margin: 0;
+}
+
+@mixin padding-reset() {
+  padding: 0;
+}

@@ -1,0 +1,61 @@
+.page-header {
+  background-color: #F3F7F8;
+}
+
+.page-header__hadihg-nav {
+  color: #ffffff;
+  background-color: #32425C;
+}
+
+.hadihg-nav__logo {
+  font-size: 24px;
+  line-height: 24px;
+  background-color: #ee3643;
+}
+
+.hadihg-nav__form input {
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #32425C;
+}
+
+.user-nav__list {
+  @include list-reset;
+}
+
+.hadihg-nav__item {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+
+  &--bg-color {
+    background-color: #63A63E;
+  }
+}
+
+.user-nav__heading {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: normal;
+  font-style: italic;
+  color: #ee3643;
+}
+
+.contacts__tell {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.content__address {
+  color: #32425c;
+}
+
+.user-nav__item a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  text-decoration: none;
+  background-color: #ffffff;
+}
