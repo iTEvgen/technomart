@@ -10,7 +10,9 @@
 .hadihg-nav__logo {
   font-size: 24px;
   line-height: 24px;
+  color: #FFFFFF;
   background-color: #ee3643;
+  text-decoration: none;
 }
 
 .hadihg-nav__form input {
@@ -19,7 +21,8 @@
   background-color: #32425C;
 }
 
-.user-nav__list {
+.user-nav__list,
+.user-nav-login__list {
   @include list-reset;
 }
 
@@ -58,4 +61,11 @@
   color: #000000;
   text-decoration: none;
   background-color: #ffffff;
+}
+
+
+.user-nav-login__item {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425C;
 }
