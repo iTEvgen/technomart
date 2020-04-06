@@ -9,58 +9,83 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper wrapper">
-
-        <div class="page-header__hadihg-nav">
+      <div class="page-header__wrapper">
+        <div class="page-header__hadihg-nav wrapper">
           <a class="hadihg-nav__logo">Техномарт</a>
           <form class="hadihg-nav__form" action="https://echo.htmlacademy.ru" method="POST">
-            <label class="visually-hidden" for="search-site-id">поис по сайту</label>
             <input type="search" name="search-form" id="search-site-id" placeholder="Поиск:">
+            <label class="search-site" for="search-site-id">
+              <svg class="search-site__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17">
+                <path fill="#6A6A6A" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0015 7.5 7.5 7.5 0 107.5
+                15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532
+                2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 012 7.5z"/>
+              </svg>
+              <span class="visually-hidden">поис по сайту</span>
+            </label>
           </form>
-          <a class="hadihg-nav__item" href="#" aria-label="Переход на страницу с закладками">Закладки: <span>0</span></a>
-          <a class="hadihg-nav__item" href="#" aria-label="Переход на страницу с корзиной">Корзина: <span>0</span></a>
+          <a class="hadihg-nav__item" href="#" aria-label="Переход на страницу с закладками">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16">
+              <path fill="#FFFFFF" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637
+                0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
+            </svg>
+            Закладки: <span>0</span></a>
+          <a class="hadihg-nav__item" href="#" aria-label="Переход на страницу с корзиной">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#FFFFFF">
+              <circle cx="4.5" cy="13.5" r="1.5"/><circle cx="12.5" cy="13.5" r="1.5"/>
+              <path  d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+            </svg>
+            Корзина: <span>0</span></a>
           <a class="hadihg-nav__item hadihg-nav__item--bg-color" href="#" aria-label="Переход на страницу с Оформить заказ">Оформить заказ</a>
         </div>
-
-        <div class="page-header__user-nav">
-          <h1 class="user-nav__heading">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
-          <div class="user-nav__contacts">
-            <p class="contacts__tell">+7 (812) 555-05-55</p>
-            <p class="content__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      </div>
+        <div class="wrapper">
+          <div class="page-header__user-nav">
+            <h1 class="user-nav__heading">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
+            <div class="user-nav__contacts">
+              <p class="contacts__tell">+7 (812) 555-05-55</p>
+              <p class="content__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            </div>
+            <ul class="user-nav__list">
+              <li class="user-nav__items" ><a class="user-nav__item user-nav__item--padding" href="#" aria-label="Переход на страницу с авторизации">
+                <svg class="user-nav__icon-login" xmlns="http://www.w3.org/2000/svg" width="20" height="17">
+                  <path fill="#C5C5C5" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
+                  <path fill="#C5C5C5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81
+                    3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839
+                    0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
+                  </svg>
+                Войти</a></li>
+              <li class="user-nav__items"><a class="user-nav__item" href="#" aria-label="Переход на страницу с регистрации">Регистрация</a></li>
+            </ul>
           </div>
-          <ul class="user-nav__list">
-            <li class="user-nav__item" ><a href="#" aria-label="Переход на страницу с авторизации">Войти</a></li>
-            <li class="user-nav__item"><a href="#" aria-label="Переход на страницу с регистрации">Регистрация</a></li>
-          </ul>
+
+          <nav class="page-header__site-nav">
+            <ul class="site-nav__list">
+              <li class="site-nav__items">
+                <a class="site-nav__item">Главная</a>
+              </li>
+              <li class="site-nav__items">
+                <a class="site-nav__item" href="#">Компания</a>
+              </li>
+              <li class="site-nav__items">
+                <a class="site-nav__item" href="catalog.html">Каталог</a>
+              </li>
+              <li class="site-nav__items">
+                <a class="site-nav__item" href="#">Новости</a>
+              </li>
+              <li class="site-nav__items">
+                <a class="site-nav__item" href="#">Спецпредложения</a>
+              </li>
+              <li class="site-nav__items">
+                <a class="site-nav__item" href="#">Доставка</a>
+              </li>
+              <li class="site-nav__items">
+                <a class="site-nav__item" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
         </div>
 
-        <nav class="page-header__site-nav">
-          <ul class="site-nav__list">
-            <li class="site-nav__items">
-              <a class="site-nav__item">Главная</a>
-            </li>
-            <li class="site-nav__items">
-              <a class="site-nav__item" href="#">Компания</a>
-            </li>
-            <li class="site-nav__items">
-              <a class="site-nav__item" href="catalog.html">Каталог</a>
-            </li>
-            <li class="site-nav__items">
-              <a class="site-nav__item" href="#">Новости</a>
-            </li>
-            <li class="site-nav__items">
-              <a class="site-nav__item" href="#">Спецпредложения</a>
-            </li>
-            <li class="site-nav__items">
-              <a class="site-nav__item" href="#">Доставка</a>
-            </li>
-            <li class="site-nav__items">
-              <a class="site-nav__item" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
 
-      </div>
     </header>
 
 
@@ -83,7 +108,7 @@
           </div>
         </div>
 
-        <div class="promo__block block-color-two">
+        <div class="promo__block promo__block--column block-color-two">
           <div class="promo__list">
             <h3 class="promo__heading">Техника</h3>
             <a class="promo__item" href="#" aria-label="Переход на страницу с техникой для стройки">для стройки</a>
@@ -110,48 +135,76 @@
 
           <ul class="popular-products__list">
             <li class="popular-products__items">
-              <a class="popular-products__item" href="#" aria-label="Переход на карточки товара">
-                <picture>
-                  <source type="image/webp" srcset="img/product_one@1x.webp">
-                  <img class="popular-products__img" src="img/product_one@1x.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="150">
-                </picture>
-                <h3 class="popular-products-item__heading">Перфоратор <span>Bosch bfg 9000</span></h3>
-                <span>32500 Р.</span>
-                <p class="popular-products__price">25500 Р.</p>
-              </a>
+              <div class="popular-products__item-wrapper">
+                <a href="#" class="popular-products__item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#FFFFFF">
+                    <circle cx="4.5" cy="13.5" r="1.5"/><circle cx="12.5" cy="13.5" r="1.5"/>
+                    <path  d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                  </svg> Купить
+                </a>
+                <a href="#" class="popular-products__item popular-products__item--modific">В закладки</a>
+              </div>
+              <picture>
+                <source type="image/webp" srcset="img/product_one@1x.webp">
+                <img class="popular-products__img" src="img/product_one@1x.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="150">
+              </picture>
+              <h3 class="popular-products-item__heading">Перфоратор <span>Bosch bfg 9000</span></h3>
+              <span>32500 Р.</span>
+              <a href="#" class="popular-products__price">25500 Р.</a>
             </li>
             <li class="popular-products__items">
-              <a class="popular-products__item" href="#" aria-label="Переход на карточки товара">
-                <picture>
-                  <source type="image/webp" srcset="img/product_four@1x.webp">
-                  <img class="popular-products__img" src="img/product_four@1x.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="150">
-                </picture>
-                <h3 class="popular-products-item__heading">Перфоратор <span>Bosch bfg 3000</span></h3>
-                <span>22500 Р.</span>
-                <p class="popular-products__price">15500 Р.</p>
-              </a>
+              <div class="popular-products__item-wrapper">
+                <a href="#" class="popular-products__item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#FFFFFF">
+                    <circle cx="4.5" cy="13.5" r="1.5"/><circle cx="12.5" cy="13.5" r="1.5"/>
+                    <path  d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                  </svg> Купить
+                </a>
+                <a href="#" class="popular-products__item popular-products__item--modific">В закладки</a>
+              </div>
+              <picture>
+                <source type="image/webp" srcset="img/product_four@1x.webp">
+                <img class="popular-products__img" src="img/product_four@1x.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="150">
+              </picture>
+              <h3 class="popular-products-item__heading">Перфоратор <span>Bosch bfg 3000</span></h3>
+              <span>22500 Р.</span>
+              <a href="#" class="popular-products__price">15500 Р.</a>
             </li>
             <li class="popular-products__items">
-              <a class="popular-products__item" href="#" aria-label="Переход на карточки товара">
-                <picture>
-                  <source type="image/webp" srcset="img/product_three@1x.webp">
-                  <img class="popular-products__img" src="img/product_three@1x.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="150">
-                </picture>
-                <h3 class="popular-products-item__heading">Перфоратор <span>Bosch bfg 6000</span></h3>
-                <span>30500 Р.</span>
-                <p class="popular-products__price">25500 Р.</p>
-              </a>
+              <div class="popular-products__item-wrapper">
+                <a href="#" class="popular-products__item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#FFFFFF">
+                    <circle cx="4.5" cy="13.5" r="1.5"/><circle cx="12.5" cy="13.5" r="1.5"/>
+                    <path  d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                  </svg> Купить
+                </a>
+                <a href="#" class="popular-products__item popular-products__item--modific">В закладки</a>
+              </div>
+              <picture>
+                <source type="image/webp" srcset="img/product_three@1x.webp">
+                <img class="popular-products__img" src="img/product_three@1x.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="150">
+              </picture>
+              <h3 class="popular-products-item__heading">Перфоратор <span>Bosch bfg 6000</span></h3>
+              <span>30500 Р.</span>
+              <a href="#" class="popular-products__price">25500 Р.</a>
             </li>
             <li class="popular-products__items">
-              <a class="popular-products__item" href="#" aria-label="Переход на карточки товара">
-                <picture>
-                  <source type="image/webp" srcset="img/product_four@1x.webp">
-                  <img class="popular-products__img" src="img/product_four@1x.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="150">
-                </picture>
-                <h3 class="popular-products-item__heading">Перфоратор <span>Bosch bfg 2000</span></h3>
-                <span></span>
-                <p class="popular-products__price">12500 Р.</p>
-              </a>
+              <div class="popular-products__item-wrapper">
+                <a href="#" class="popular-products__item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#FFFFFF">
+                    <circle cx="4.5" cy="13.5" r="1.5"/><circle cx="12.5" cy="13.5" r="1.5"/>
+                    <path  d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                  </svg> Купить
+                </a>
+                <a href="#" class="popular-products__item popular-products__item--modific">В закладки</a>
+              </div>
+              <picture>
+                <source type="image/webp" srcset="img/product_four@1x.webp">
+                <img class="popular-products__img" src="img/product_four@1x.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="150">
+              </picture>
+              <h3 class="popular-products-item__heading">Перфоратор <span>Bosch bfg 2000</span></h3>
+              <span></span>
+              <a href="#" class="popular-products__price">12500 Р.</a>
             </li>
           </ul>
 
@@ -170,7 +223,7 @@
             <a href="#" class="manufacture__item" aria-label="Переход на страницу с товарами марки bosch">
               <picture>
                 <source type="image/webp" srcset="img/bosch@1x.webp">
-                <img src="img/bosch@1x.jpg" alt="логотип марки bosch" width="126" height="37">
+                <img src="img/bosch@1x.jpg" alt="логотип марки bosch">
               </picture>
             </a>
           </li>
@@ -178,7 +231,7 @@
             <a href="#" class="manufacture__item" aria-label="Переход на страницу с товарами марки makita">
               <picture>
                 <source type="image/webp" srcset="img/Makita@1x.webp">
-                <img src="img/Makita@1x.jpg" alt="тлоготип марки makita" width="123" height="40">
+                <img src="img/Makita@1x.jpg" alt="тлоготип марки makita">
               </picture>
             </a>
           </li>
@@ -186,7 +239,7 @@
             <a href="#" class="manufacture__item" aria-label="Переход на страницу с товарами марки DeWALT">
               <picture>
                 <source type="image/webp" srcset="img/dewalt@1x.webp">
-                <img src="img/DeWALT@1x.jpg" alt="логотип марки DeWALT" width="146" height="44">
+                <img src="img/DeWALT@1x.jpg" alt="логотип марки DeWALT">
               </picture>
             </a>
           </li>
@@ -194,7 +247,7 @@
             <a href="#" class="manufacture__item" aria-label="Переход на страницу с товарами марки Interskol">
               <picture>
                 <source type="image/webp" srcset="img/Interskol@1x.webp">
-                <img src="img/Interskol@1x.jpg" alt="логотип марки Interskol" width="200" height="56">
+                <img src="img/Interskol@1x.jpg" alt="логотип марки Interskol">
               </picture>
             </a>
             </li>
@@ -202,23 +255,23 @@
             <a href="#" class="manufacture__item" aria-label="Переход на страницу с товарами марки Hitachi">
               <picture>
                 <source type="image/webp" srcset="img/Hitachi@1x.webp">
-                <img src="img/Hitachi@1x.jpg" alt="логотип марки Hitachi" width="169" height="31">
+                <img src="img/Hitachi@1x.jpg" alt="логотип марки Hitachi">
               </picture>
             </a>
           </li>
           <li class="manufacture__items">
             <a href="#" class="manufacture__item" aria-label="Переход на страницу с товарами марки LG">
-              <picture>
+              <picture class="dis-block">
                 <source type="image/webp" srcset="img/LG@1x.webp">
-                <img src="img/LG@1x.jpg" alt="логотип марки LG" width="121" height="73">
+                <img src="img/LG@1x.jpg" alt="логотип марки LG">
               </picture>
             </a>
           </li>
           <li class="manufacture__items">
             <a href="#" class="manufacture__item" aria-label="Переход на страницу с товарами марки AEG power solutions">
               <picture>
-
-                <img src="img/AEG@1x.jpg" alt="логотип марки AEG power solutions" width="151" height="96">
+                <source type="image/webp" srcset="img/AEG@1x.webp">
+                <img src="img/AEG@1x.jpg" alt="логотип марки AEG power solutions">
               </picture>
             </a>
           </li>
@@ -226,7 +279,7 @@
             <a href="#" class="manufacture__item" aria-label="Переход на страницу с товарами марки Metabo">
               <picture>
                 <source type="image/webp" srcset="img/Metabo@1x.webp">
-                <img src="img/Metabo@1x.jpg" alt="логотип марки Metabo" width="204" height="69">
+                <img src="img/Metabo@1x.jpg" alt="логотип марки Metabo">
               </picture>
             </a>
           </li>
@@ -240,17 +293,39 @@
         <div class="services__wrepper wrapper">
           <h2 class="services__heading">Сервесы</h2>
           <p class="services__desc">Хороший интернет-магазин отличается от плохого не только ценами!<br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-          <ul class="services__list">
-            <li class="services__items">Доставка</li>
-            <li class="services__items services__items--color">Гарантия</li>
-            <li class="services__items services__items--color">Кредиты</li>
-          </ul>
+          <div class="services__slider-container">
+            <input id="delivery" class="visually-hidden" type="radio" name="services" checked="checked">
+            <input id="warranty" class="visually-hidden" type="radio" name="services">
+            <input id="credit" class="visually-hidden" type="radio" name="services">
+            <div class="services__slider-list">
+              <label class="services__slider-items" for="delivery">Доставка</label>
+              <label class="services__slider-items" for="warranty">Гарантия</label>
+              <label class="services__slider-items" for="credit">Кредит</label>
+            </div>
+            <ul class="services__list">
+              <li class="services__items ">
+                <h3>Доставка</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+              </li>
+              <li class="services__items">
+                <h3>Гарантия</h3>
+                <p>Если купленный у нас товар поломается или заискрит,
+                  а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+                  Дом уж восстановите как-нибудь сами.</p>
+              </li>
+              <li class="services__items">
+                <h3>Кредит</h3>
+                <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                <a href="#">Отправить заявку</a>
+              </li>
+            </ul>
+          </div>
         </div>
 
       </section>
 
 
-      <div class="desc-cont__wraper">
+      <div class="desc-cont__wraper wrapper">
 
         <section class="description">
           <h2 class="description__heading"><span>Компания</span> &laquo;Техномарт&raquo;</h2>
@@ -331,7 +406,7 @@
       </div>
 
       <div class="page-footer__bgr page-footer__bgr--color">
-        <div class="footer__block wrapper">
+        <div class="footer__block-info wrapper">
 
           <p class="footer__copyright">© 2010–2017 Компания &laquo;Техномарт&raquo;<br> Все права защищены</p>
 

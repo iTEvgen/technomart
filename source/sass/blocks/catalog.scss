@@ -26,6 +26,11 @@
   color: #32425C;
 }
 
+.catalog-items__filter {
+  flex-basis: 220px;
+  margin-right: 20px;
+}
+
 .filter-form {
   font-size: 15px;
   line-height: 20px;
@@ -56,6 +61,7 @@ legend {
 }
 
 .wrapper__cards {
+  margin-bottom: 20px;
   background-color: #F7F3EC;
 }
 
@@ -85,6 +91,8 @@ legend {
 }
 
 .catalog-items__description {
+  padding-top: 43px;
+  padding-bottom: 61px;
   background-color: #F2F6F8;
 }
 
