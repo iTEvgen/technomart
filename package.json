@@ -5,6 +5,7 @@
   "description": "Личный проект «Техномар»",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
+    "acorn": "^5.7.4",
     "autoprefixer": "^9.7.5",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
@@ -20,6 +21,8 @@
     "gulp-sourcemaps": "2.6.x",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
+    "kind-of": "^6.0.3",
+    "minimist": "^1.2.3",
     "readable-stream": "^3.6.0",
     "stylelint": "^9.10.1",
     "stylelint-config-htmlacademy": "^0.1.4"
