@@ -188,7 +188,7 @@
   text-decoration: line-through;
 }
 
-.popular-products__items > a,
+.popular-products__items > p,
 .cards-items__item > p {
   position: relative;
   width: 122px;
@@ -207,7 +207,7 @@
   box-sizing: border-box;
 }
 
-.popular-products__items > a::after,
+.popular-products__items > p::after,
 .cards-items__item > p::after {
   position: absolute;
   content: "";
