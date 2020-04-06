@@ -2,23 +2,80 @@
   background-color: #F3F7F8;
 }
 
-.page-header__hadihg-nav {
-  color: #ffffff;
+.page-header__wrapper {
+  min-height: 42px;
   background-color: #32425C;
 }
 
+.page-header__hadihg-nav {
+  color: #ffffff;
+}
+
 .hadihg-nav__logo {
+  position: relative;
+  width: 220px;
+  padding: 9px 0 9px 0;
   font-size: 24px;
   line-height: 24px;
   color: #FFFFFF;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
   background-color: #ee3643;
   text-decoration: none;
 }
 
+.hadihg-nav__logo::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  width: 220px;
+  height: 5px;
+  background-color: #B72F38;
+}
+
 .hadihg-nav__form input {
+  width: 270px;
+  padding: 12px 10px 12px 49px;
   font-size: 17px;
   line-height: 18px;
   background-color: #32425C;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.hadihg-nav__form {
+  position: relative;
+  display: flex;
+}
+
+.search-site {
+  position: absolute;
+  display: flex;
+  width: 49px;
+  height: 42px;
+}
+
+.search-site__icon {
+  padding-top: 12px;
+  padding-left: 17px;
+}
+
+.hadihg-nav__form input:hover {
+  background-color: #212A3A;
+}
+
+.hadihg-nav__form input:focus {
+  background-color: #FFFFFF;
+}
+
+.hadihg-nav__form input:hover ~ label path {
+  fill: #FFFFFF;
+}
+
+.hadihg-nav__form input:focus ~ label path {
+  fill: #EE2643;
 }
 
 .user-nav__list,
@@ -27,17 +84,55 @@
 }
 
 .hadihg-nav__item {
+  position: relative;
+  width: 150px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 45px;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
+  vertical-align: middle;
   text-decoration: none;
+  box-sizing: border-box;
 
   &--bg-color {
+    padding-left: 0;
+    text-align: center;
     background-color: #63A63E;
   }
 }
 
+.hadihg-nav__item svg {
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  opacity: 0.3;
+}
+
+.hadihg-nav__item:hover > svg,
+.hadihg-nav__item:focus > svg {
+  opacity: 1;
+}
+
+.hadihg-nav__item:hover,
+.hadihg-nav__item:focus {
+  background-color: #212A3A;
+}
+
+.hadihg-nav__item--bg-color:hover,
+.hadihg-nav__item--bg-color:focus {
+  background-color: #5FBB2D;
+}
+
+.hadihg-nav__item:active {
+  opacity: 0.6;
+}
+
 .user-nav__heading {
+  width: 250px;
+  margin: 0 17px 0 0;
+  padding-top: 2px;
   font-size: 16px;
   line-height: 23px;
   font-weight: normal;
@@ -45,17 +140,39 @@
   color: #ee3643;
 }
 
+.user-nav__contacts {
+  width: 270px;
+  margin-right: auto;
+}
+
 .contacts__tell {
+  margin: 0;
+  padding: 9px 0 9px 71px;
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
+  border: 3px solid #FFFFFF;
+  background-image: url(../img/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: 11px 10px;
 }
 
 .content__address {
+  margin: 4px 0 0 10px;
   color: #32425c;
 }
 
-.user-nav__item a {
+.user-nav__list li:first-child {
+  margin-right: 10px;
+}
+
+.user-nav__list--column li:first-child {
+  margin-right: 0;
+}
+
+.user-nav__items a {
+  position: relative;
+  padding: 12px 24px 12px 24px;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -63,6 +180,35 @@
   background-color: #ffffff;
 }
 
+a.user-nav__item {
+
+  &--padding {
+    padding-left: 49px;
+  }
+
+}
+
+.user-nav__icon-login {
+  position: absolute;
+  top: 13px;
+  left: 14px;
+}
+
+.user-nav__item:hover,
+.user-nav__item:focus {
+  color: #EE3643;
+}
+
+.user-nav__item:hover > .user-nav__icon-login path,
+.user-nav__item:focus > .user-nav__icon-login path {
+  fill: #32425C;
+}
+
+.user-nav__item:active,
+.user-nav__item:active > .user-nav__icon-login path {
+  color: #C5C5C5;
+  fill: #C5C5C5;
+}
 
 .user-nav-login__item {
   font-size: 16px;

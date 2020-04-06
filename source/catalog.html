@@ -11,28 +11,42 @@
   <header class="page-header">
     <div class="page-header__wrapper">
 
-      <div class="page-header__hadihg-nav">
+      <div class="page-header__hadihg-nav wrapper">
         <a href="index.html" class="hadihg-nav__logo" aria-label="Переход на главную страницк интернет-магазина Техномант">Техномарт</a>
         <form class="hadihg-nav__form" action="https://echo.htmlacademy.ru" method="POST">
-          <label class="visually-hidden" for="search-site-id">поис по сайту</label>
+          <label class="search-site" for="search-site-id"><span class="visually-hidden">поис по сайту</span></label>
           <input type="search" name="search-form" id="search-site-id" placeholder="Поиск:">
         </form>
-        <a class="hadihg-nav__item" aria-label="Переход на страницу с закладками" href="#">Закладки: <span>0</span></a>
-        <a class="hadihg-nav__item" aria-label="Переход на страницу с корзиной" href="#">Корзина: <span>10</span></a>
-        <a class="hadihg-nav__item" aria-label="Переход на страницу с Оформить заказ" href="#">Оформить заказ</a>
+        <a class="hadihg-nav__item" aria-label="Переход на страницу с закладками" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16">
+            <path fill="#FFFFFF" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637
+              0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
+          </svg>
+          Закладки: <span>0</span>
+        </a>
+        <a class="hadihg-nav__item" aria-label="Переход на страницу с корзиной" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#FFFFFF">
+            <circle cx="4.5" cy="13.5" r="1.5"/><circle cx="12.5" cy="13.5" r="1.5"/>
+            <path  d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+          </svg>
+          Корзина: <span>10</span></a>
+        <a class="hadihg-nav__item hadihg-nav__item--bg-color" aria-label="Переход на страницу с Оформить заказ" href="#">Оформить заказ</a>
       </div>
 
+    </div>
+
+    <div class="wrapper">
       <div class="page-header__user-nav">
         <h1 class="user-nav__heading">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
         <div class="user-nav__contacts">
           <p class="contacts__tell">+7 (812) 555-05-55</p>
           <p class="content__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
-        <ul class="user-nav__list">
-          <li class="user-nav__item">
-            <a href="#" aria-label="Персональная стнаница пользователя">Иван Иванович</a>
-            <button class="button">
-              <span class="visually-hidden">Выйти из личного кабинета</span>
+        <ul class="user-nav__list user-nav__list--column">
+          <li class="user-nav__items user-nav__items--margin">
+            <a class="" href="#" aria-label="Персональная стнаница пользователя">Иван Иванович</a>
+            <button class="button visually-hidden">
+              <span class="">Выйти из личного кабинета</span>
             </button>
           </li>
           <li class="user-nav-login__items">
@@ -42,12 +56,11 @@
             <a class="user-nav-login__item" href="#" aria-label="Переход на страницу Личного кабинета">Личный кабинет</a>
           </li>
         </ul>
-        <!--<ul class="user-nav__list">
-          <li class="user-nav__item"><a href="#">Войти</a></li>
-          <li class="user-nav__item"><a href="#">Регистрация</a></li>
-        </ul>-->
+          <!--<ul class="user-nav__list">
+            <li class="user-nav__item"><a href="#">Войти</a></li>
+            <li class="user-nav__item"><a href="#">Регистрация</a></li>
+          </ul>-->
       </div>
-
       <nav class="page-header__site-nav">
         <ul class="site-nav__list">
           <li class="site-nav__items">
@@ -57,10 +70,10 @@
             <a class="site-nav__item" href="#">Компания</a>
           </li>
           <li class="site-nav__items">
-            <a class="site-nav__item">Каталог</a>
+             <a class="site-nav__item">Каталог</a>
           </li>
           <li class="site-nav__items">
-            <a class="site-nav__item" href="#">Новости</a>
+             <a class="site-nav__item" href="#">Новости</a>
           </li>
           <li class="site-nav__items">
             <a class="site-nav__item" href="#">Спецпредложения</a>
@@ -74,11 +87,12 @@
         </ul>
       </nav>
 
-    </div>
+      </div>
+
   </header>
 
 
-  <main class="page-main catalog-items wrapper">
+  <main class="page-main catalog-items">
     <div class="wrapper">
 
       <div class="catalog__heading">
@@ -356,8 +370,8 @@
       </div>
     </div>
 
-    <div class="page-footer__bgr">
-      <div class="footer__block wrapper">
+    <div class="page-footer__bgr page-footer__bgr--color">
+      <div class="footer__block-info wrapper">
 
         <p class="footer__copyright">© 2010–2017 Компания &laquo;Техномарт&raquo;<br> Все права защищены</p>
 

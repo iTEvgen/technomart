@@ -27,4 +27,144 @@ input[type="radio"].visually-hidden {
 
 img {
   max-width: 100%;
+  height: auto;
+}
+
+/*сетка шапки*/
+
+.page-header {
+  margin-bottom: 60px;
+  padding-bottom: 59px;
+}
+
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.page-header__hadihg-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-header__user-nav {
+  display: flex;
+  margin-bottom: 39px;
+  padding: 46px 0 0 53px;
+}
+
+.user-nav__list {
+  display: flex;
+
+  &--column {
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 300px;
+  }
+}
+
+.user-nav__list--column li:first-child {
+  width: 100%;
+}
+
+.user-nav__items a{
+  display: block;
+}
+
+.site-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 5px solid #293449;
+}
+
+/*сетка основного содержания*/
+
+.promo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 33px;
+}
+
+.promo__block {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 620px;
+
+
+  &--column {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 300px;
+  }
+}
+
+.popular-products__wrapper,
+.manufacture__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 5px 20px 5px 30px;
+}
+
+.popular-products__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.manufacture {
+  margin-bottom: 68px;
+}
+
+.manufacture__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.desc-cont__wraper {
+  display: flex;
+}
+
+/*сетка каталога*/
+
+.catalog-items__wrapper {
+  display: flex;
+}
+
+.cards-items__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards-items__list li:nth-child(3n) {
+  margin-right: 0;
+}
+
+/*сетка подвала*/
+
+.footer-nav {
+  display: flex;
+}
+
+.footer-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-poducts {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-poducts__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__block-info {
+  display: flex;
 }

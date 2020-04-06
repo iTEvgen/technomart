@@ -5,8 +5,22 @@
 }
 
 .site-nav__item {
+  display: block;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 34px;
+  padding-right: 33px;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
   text-decoration: none;
+}
+
+.site-nav__item:hover,
+.site-nav__item:focus {
+  background-color: #293449;
+}
+
+.site-nav__item[href]:active {
+  color: rgba(225, 255, 255, 0.5);
 }
