@@ -126,12 +126,12 @@
               <li class="slider__items">
                 <h3>Перфараторы</h3>
                 <p>Настоящие мужские игрушки</p>
-                <a class="slider__item" href="">Открыть каталог</a>
+                <a class="slider__item" href="catalog.html">Открыть каталог</a>
               </li>
               <li class="slider__items">
                 <h3>Дрели</h3>
                 <p>Соседям на радость!</p>
-                <a class="slider__item" href="">Открыть каталог</a>
+                <a class="slider__item" href="catalog.html">Открыть каталог</a>
               </li>
             </ul>
           </div>
@@ -501,22 +501,26 @@
 
     <section class="modal-form">
       <h2 class="visually-hidden">Связатся с Техномартом</h2>
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <p>
-          <label for="name-id">Ваше имя:</label>
-          <input type="text" name="first-name" id="name-id" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="email-id">Ваш e-mail:</label>
-          <input type="email" name="e-mail" id="email-id" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="texi-letters">Текст письма:</label>
-          <textarea id="texi-letters" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="button modal-form__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      <form class="modal-form__items" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="modal-form__wrapper">
+          <p class="modal-form__item">
+            <label for="name-id">Ваше имя:</label>
+            <input type="text" name="first-name" id="name-id" placeholder="Имя Фамилия">
+          </p>
+          <p class="modal-form__item">
+            <label for="email-id">Ваш e-mail:</label>
+            <input type="email" name="e-mail" id="email-id" placeholder="email@example.com">
+          </p>
+          <p class="modal-form__item modal-form__item--mody-width">
+            <label for="texi-letters">Текст письма:</label>
+            <textarea id="texi-letters" placeholder="В свободной форме"></textarea>
+          </p>
+        </div>
         <div class="modal__button-wrapper">
-          <button class="button modal-form__button" type="submit">Отправить</button>
+          <div>
+            <button class="button modal-form__button" type="submit">Отправить</button>
+            <button class="button modal-form__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+          </div>
         </div>
       </form>
     </section>
@@ -527,7 +531,7 @@
         <source type="image/webp" srcset="img/full-maps@1x.webp">
         <img src="img/full-maps@1x.jpg" alt="Большая Конюшенная ул., 19" width="940" height="446">
       </picture>
-      <button type="button"><span class="visually-hidden">Закрыть</span></button>
+      <button class="button modal-form__close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
   </body>
 </html>

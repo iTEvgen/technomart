@@ -309,6 +309,11 @@ fieldset.filter-power {
   opacity: 0.3;
 }
 
+.filter-manufacturers__items input:focus + .filter-manufacturers__label::before,
+.filter-power-items input:focus + .filter-power__label::before {
+  outline: 2px solid #A0C3FB;
+}
+
 .filter-power-list {
   @include list-reset;
 }
