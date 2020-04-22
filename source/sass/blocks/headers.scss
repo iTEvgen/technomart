@@ -103,6 +103,10 @@
   }
 }
 
+.product-basket {
+  background-color: #EE3643;
+}
+
 .hadihg-nav__item svg {
   position: absolute;
   top: 12px;
@@ -118,6 +122,11 @@
 .hadihg-nav__item:hover,
 .hadihg-nav__item:focus {
   background-color: #212A3A;
+}
+
+.product-basket:hover,
+.product-basket:focus {
+  background-color: #B72F38;
 }
 
 .hadihg-nav__item--bg-color:hover,
@@ -162,6 +171,10 @@
   color: #32425c;
 }
 
+.user-nav__items {
+  position: relative;
+}
+
 .user-nav__list li:first-child {
   margin-right: 10px;
 }
@@ -188,6 +201,16 @@ a.user-nav__item {
 
 }
 
+a.user-nav__item-login {
+  padding-left: 48px;
+  padding-right: 45px;
+}
+
+.user-nav__item-login svg {
+  position: absolute;
+  left: 14px;
+}
+
 .user-nav__icon-login {
   position: absolute;
   top: 13px;
@@ -195,17 +218,24 @@ a.user-nav__item {
 }
 
 .user-nav__item:hover,
-.user-nav__item:focus {
+.user-nav__item:focus,
+.user-nav-login__item:hover,
+.user-nav-login__item:focus {
   color: #EE3643;
 }
 
 .user-nav__item:hover > .user-nav__icon-login path,
-.user-nav__item:focus > .user-nav__icon-login path {
+.user-nav__item:focus > .user-nav__icon-login path,
+a.user-nav__item-login:hover > svg path,
+a.user-nav__item-login:focus > svg path {
   fill: #32425C;
 }
 
+.user-nav-login__item:active,
 .user-nav__item:active,
-.user-nav__item:active > .user-nav__icon-login path {
+.user-nav__item:active > .user-nav__icon-login path,
+a.user-nav__item-login:active,
+a.user-nav__item-login:active > svg path {
   color: #C5C5C5;
   fill: #C5C5C5;
 }
@@ -214,4 +244,51 @@ a.user-nav__item {
   font-size: 16px;
   line-height: 18px;
   color: #32425C;
+}
+
+.login-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.login-button svg {
+  position: absolute;
+  top: 13px;
+  left: 14px;
+}
+
+.login-button:hover > svg g,
+.login-button:focus > svg g {
+  fill: #32425C;
+}
+
+.login-button:active > svg g {
+  fill: #C5C5C5;
+}
+
+.user-nav-login__items {
+  margin-top: 6px;
+}
+
+.user-nav__list--column li:nth-child(2) {
+  position: relative;
+  margin-left: 19px;
+  margin-right: 32px;
+}
+
+.user-nav__list--column li:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  right: -19px;
+  width: 4px;
+  height: 4px;
+  background-color: #32425C;
+  border-radius: 50%;
 }
