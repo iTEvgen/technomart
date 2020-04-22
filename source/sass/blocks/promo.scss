@@ -1,4 +1,4 @@
-.block-color-one div:nth-child(1) {
+.block-color-one .promo__list:nth-child(1) {
   margin-right: 20px;
   background-color: #ffbf47;
   background-image: url("../img/icon-1.svg");
@@ -6,28 +6,28 @@
   background-repeat: no-repeat;
 }
 
-.block-color-one div:nth-child(2) {
+.block-color-one .promo__list:nth-child(2) {
   background-color: #3BBCE3;
   background-image: url("../img/icon-2.svg");
   background-position: 198px 33px;
   background-repeat: no-repeat;
 }
 
-.block-color-two div:nth-child(1) {
+.block-color-two .promo__list:nth-child(1) {
   background-color: #DC91D8;
   background-image: url("../img/icon-3.svg");
   background-position: 191px 31px;
   background-repeat: no-repeat;
 }
 
-.block-color-two div:nth-child(2) {
+.block-color-two .promo__list:nth-child(2) {
   background-color: #8ED78F;
   background-image: url("../img/icon-4.svg");
   background-position: 196px 26px;
   background-repeat: no-repeat;
 }
 
-.block-color-two div:nth-child(3) {
+.block-color-two .promo__list:nth-child(3) {
   background-color: #FFC047;
   background-image: url("../img/icon-5.svg");
   background-position: 191px 32px;
@@ -75,7 +75,170 @@
 }
 
 .promo__slider {
+  position: relative;
   width: 620px;
   height: 265px;
   background-color: rgba(0, 0, 0, 0.1);
 }
+
+.slider__list {
+  @include list-reset;
+
+  user-select: none;
+}
+
+.slider__items h3{
+  @include margin-reset;
+
+  margin-top: 23px;
+  margin-bottom: 2px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.slider__items p {
+  @include margin-reset;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #FFFFFF;
+}
+
+.slider__item {
+  display: block;
+  width: 195px;
+  margin-top: auto;
+  padding: 11px 0 10px 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #EE3643;
+  border-radius: 4px;
+}
+
+.slider__item:hover,
+.slider__item:focus {
+  background-color: #CA2C37;
+}
+
+.slider__item:active {
+  background-color: #BA2732;
+}
+
+.slider__buttom {
+  position: absolute;
+  top: 118px;
+  left: 50%;
+  width: 560px;
+  height: 42px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  transform: translateX(-50%);
+}
+
+.slider__buttom > label {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  border: solid #FFFFFF;
+  border-width: 0 3px 3px 0;
+
+}
+
+.slider__buttom > label:nth-child(1) {
+  transform: rotate(135deg);
+}
+
+.slider__buttom > label:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 41px;
+  z-index: 100;
+  width: 48px;
+  height: 10px;
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+
+.slider-controls .slider-controls-item{
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls .slider-controls-item::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: 6px;
+  height: 6px;
+  margin: -3px;
+  background-color: #EE3643;
+  border-radius: 50%;
+}
+
+.slider__items {
+  display: none;
+  width: 620px;
+  height: 265px;
+  padding-left: 25px;
+  padding-bottom: 21px;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+#product-1:checked ~ .slider__list .slider__items:nth-child(1) {
+  display: flex;
+}
+
+#product-2:checked ~ .slider__list .slider__items:nth-child(2) {
+  display: flex;
+}
+
+.slider__items:nth-child(1) {
+  background-image: url("../img/baner-two@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease;
+}
+
+.slider__items:nth-child(2) {
+  background-image: url("../img/baner-one@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease;
+}
+

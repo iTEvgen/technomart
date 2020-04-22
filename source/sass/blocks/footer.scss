@@ -7,34 +7,59 @@
 }
 
 .footer__block {
-  padding-bottom: 35px;
+  padding-bottom: 49px;
+}
+
+.footer-nav {
+  margin-bottom: 4px;
 }
 
 .footer-nav > a {
+  height: 63px;
+  padding-right: 41px;
+  padding-left: 41px;
   font-size: 30px;
-  line-height: 30px;
+  line-height: 65px;
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
+  text-align: center;
   background-color: #EE3643;
+  border-bottom: 5px solid #B52933;
+
 }
 
 .footer-nav__list {
-  min-width: 550px;
+  min-width: 548px;
 
   @include list-reset;
 
+  margin-top: 28px;
   margin-left: auto;
 }
 
 .footer-nav__item {
+  display: block;
+  padding: 10px 0;
   font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
   text-decoration: none;
 }
 
+.footer-interaktive:hover,
+.footer-interaktive:focus {
+  text-decoration: underline;
+}
+
+.footer-interaktive:active {
+  opacity: .5;
+}
+
 .footer__contacts {
+  @include margin-reset;
+
+  padding-left: 3px;
   font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
@@ -42,7 +67,7 @@
 }
 
 .footer-poducts__list {
-  min-width: 540px;
+  min-width: 525px;
 
   @include list-reset;
 
@@ -50,6 +75,8 @@
 }
 
 .footer-poducts__items {
+  display: block;
+  padding: 10px 0;
   font-size: 18px;
   line-height: 24px;
   color: #FFD180;
@@ -63,6 +90,7 @@
   font-size: 16px;
   line-height: 18px;
   color: #FFFFFF;
+  vertical-align: top;
 }
 
 .footer__copyright {
@@ -83,11 +111,19 @@
 }
 
 .footer-social__item {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: #212A3A;
+}
+
+.footer-social__item:hover,
+.footer-social__item:focus,
+.footer-social__item:active {
+  background-color: #EE3643;
 }
 
 .footer__mail a,
@@ -96,6 +132,15 @@
   line-height: 18px;
   color: #FFD180;
   text-decoration: none;
+}
+
+.block-info__interaktive:hover,
+.block-info__interaktive:focus {
+  text-decoration: underline;
+}
+
+.block-info__interaktive:active {
+  color: #EE3643;
 }
 
 .footer__dev {
