@@ -55,6 +55,7 @@
   },
   "dependencies": {
     "deep-extend": "^0.6.0",
+    "dot-prop": "^5.2.0",
     "merge": "^1.2.1",
     "minimist": "^1.2.5"
   }
