@@ -54,6 +54,7 @@
     "node": "8.15"
   },
   "dependencies": {
+    "decompress": "^4.2.1",
     "deep-extend": "^0.6.0",
     "dot-prop": "^5.2.0",
     "merge": "^1.2.1",
