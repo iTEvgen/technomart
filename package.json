@@ -22,6 +22,7 @@
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
     "kind-of": "^6.0.3",
+    "object-path": "^0.11.5",
     "readable-stream": "^3.6.0",
     "stylelint": "^9.10.1",
     "stylelint-config-htmlacademy": "^0.1.4"
