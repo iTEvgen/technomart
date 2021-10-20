@@ -8,6 +8,7 @@
     "acorn": "^5.7.4",
     "autoprefixer": "^9.7.1",
     "browser-sync": "^2.26.12",
+    "browserslist": "^4.16.5",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-csso": "^3.0.1",
